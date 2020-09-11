@@ -1,0 +1,55 @@
+@import "../setting/config";
+
+/*top*/
+.top-wrapper {
+    height:80rem;
+    position:relative;
+    min-height:350px;
+    @media (max-width:670px) {
+        height:35rem;
+    }
+}
+
+.mv-movie{
+    height:57.8rem;
+    overflow: hidden;
+    min-height:202px;
+    @media (max-width:670px) {
+        height:20.2rem;
+    }
+    
+    video{
+    width:100vw;
+    }
+}
+   
+
+.mv-text{
+    position: absolute;
+    top: 38rem;
+    
+        @media (max-width:670px) {
+            position: absolute;
+            top: 15rem;            
+            }
+}
+
+.tit{
+    color: $main-color;
+    display:inline-block;
+    font-size: 18rem;
+    font-weight: bold;
+    margin-bottom:3.6rem;
+        
+    &:last-of-type{
+        margin-bottom:0;
+    }
+            
+    
+        @media (max-width:670px) {
+            font-size: 6rem;
+            margin-bottom:1rem;   
+            }   
+
+}
+

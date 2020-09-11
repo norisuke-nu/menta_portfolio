@@ -1,0 +1,30 @@
+@import "../setting/config";
+
+* {
+    box-sizing: border-box;
+    color:$font-color;
+}
+
+html{
+    font-size:62.5%; 
+}
+
+body {
+    font-family:"objectivemedium", "noto_sans_jpmedium", sans-serif;
+}
+
+/*共通*/
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: (1025/1280)*100vw;
+    margin: 0 auto;
+    
+        @media (max-width:670px) {
+            width: auto;
+            padding:0 1rem;
+            
+    }
+}

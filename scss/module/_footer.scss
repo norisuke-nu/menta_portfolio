@@ -1,0 +1,11 @@
+@import "../setting/config";
+
+
+/*footer*/
+footer{
+    height:34.2rem;
+    background-color:$main-color;
+    }
+    @media (max-width:670px){
+        height:12rem;
+    } 

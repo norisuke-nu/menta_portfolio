@@ -1,0 +1,14 @@
+@import "../setting/config";
+
+/*要素のフェードイン*/
+.fadein {
+	opacity : 0.1;
+	transform : translate(0, 50px);
+	transition : all 1000ms;
+    transition-timing-function:$ease-out-expo;
+    
+	&.scrollin {
+	opacity : 1;
+	transform : translate(0, 0);
+	}
+}

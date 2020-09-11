@@ -1,0 +1,142 @@
+@import "../setting/config";
+
+@font-face {
+    font-family: 'objectivebold_italic';
+    src: url('fonts/objective-bold-italic-webfont.woff2') format('woff2'),
+         url('fonts/objective-bold-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'objectivebold';
+    src: url('fonts/objective-bold-webfont.woff2') format('woff2'),
+         url('fonts/objective-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'objectivemedium';
+    src: url('fonts/objective-medium-webfont.woff2') format('woff2'),
+         url('fonts/objective-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'noto_sans_jpbold';
+    src: url('fonts/notosansjp-bold-webfont.woff2') format('woff2'),
+         url('fonts/notosansjp-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'noto_sans_jpmedium';
+    src: url('fonts/notosansjp-medium-webfont.woff2') format('woff2'),
+         url('fonts/notosansjp-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+/*フォント*/
+
+
+h1{
+    font-family: 'objectivebold_italic';
+}
+
+h2{
+    font-family: 'noto_sans_jpbold';   
+}
+
+h3{
+    font-family: 'objectivebold_italic';
+}
+
+h4{
+    font-family: 'objectivebold_italic';
+}
+
+h5{
+    font-family: "noto_sans_jpmedium";
+}
+
+p{
+    font-family: "noto_sans_jpmedium";
+}
+
+/*テキストスタイル*/
+
+.sub-tit{
+    width:fit-content;
+    font-size:6rem;
+    color: $accent-font-color;
+    margin:0 auto;
+    position:relative; 
+    z-index: 1;
+        &:after {
+            z-index: -5;
+            content: attr(data-text)"";
+            color:rgba(0,0,0,0);
+            text-stroke:1px $main-color;
+            -webkit-text-stroke:1px $main-color;
+            position: absolute;
+            top:-0.5rem;
+            left:0.5rem;
+            }
+    @media (max-width:670px) {
+        font-size:4rem;
+    }
+    
+    &-cap{
+    font-family:'objectivebold_italic';
+    font-size: 2.4rem;
+    color:$main-color;
+    text-align: center;
+    
+        @media (max-width:670px) {
+        font-size:1.2rem;
+        }
+}
+    
+    &02{
+    font-size:3.2rem;
+    
+    @media (max-width:670px) {
+        font-size:1.6rem;
+    }
+}
+    
+}
+
+
+
+.number{
+    font-family:'objectivebold_italic';
+    font-size:10rem;
+    color:black;
+    
+    @media (max-width:670px) {
+        font-size:4rem;
+    }
+}
+
+.text-content{
+    font-size:2rem;
+    line-height: 2;
+
+    @media (max-width:670px) {
+        font-size:1.3rem;
+    }
+}
+
